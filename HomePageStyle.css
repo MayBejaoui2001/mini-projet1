@@ -1,0 +1,80 @@
+        /* Style pour la division en deux parties */
+        .container {
+            display: flex;
+        }
+        
+        .column {
+            flex: 1;
+            padding: 10px;
+          
+        }
+
+        /* Styles pour agrandir les champs de formulaire */
+        input[type="text"],
+        input[type="password"] {
+            width: 60%;
+            padding: 12px;
+            font-size: 12px;    
+            border: 2px solid #402aa5; 
+        }
+        /* Style pour le bouton "Se connecter" */
+        input[type="submit"] {
+            background-color: #402aa5; /* Couleur de fond du bouton (par exemple, bleu) */
+            color: white; /* Couleur du texte du bouton (par exemple, blanc) */
+            padding: 10px 20px; /* Espacement du bouton */
+            border: none; /* Supprime la bordure du bouton */
+            cursor: pointer;
+           border-radius: 25px;
+        }
+         /* Styles pour positionner le formulaire plus bas */
+         .form-container {
+            margin-top: 40px; /* Ajustez la marge pour déplacer le formulaire vers le bas */
+        }
+        h1 {
+            font-size: 45px;
+            color: #222222; /* Changer la couleur ici (par exemple, rouge) */
+        }
+        h4{
+            color: #6b6a6a; /* Changer la couleur ici (par exemple, rouge) */
+        }
+        h1, h4 {
+            margin: 0;  /* Supprimer la marge entre les éléments h1 et h4 */
+            padding: 0; /* Supprimer le padding entre les éléments h1 et h4 */
+        }
+        .forgot-password {
+            background-color: transparent; /* Couleur de fond transparente pour supprimer la bordure */
+            color: #6b6a6a; /* Couleur du texte (par exemple, rouge) */
+            padding: 10px 20px; /* Espacement du bouton */
+            border: none; /* Supprime la bordure du bouton */
+            cursor: pointer;
+            margin-left: 100px; /* Espacement à gauche pour placer le bouton à gauche */
+        }
+        .input-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    padding: 10px;
+    border: 1px solid #402aa5; 
+    border-radius: 5px;
+    width: 320px;
+    padding-left: 20px; 
+}
+        .input-container::before {
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    left: 0px;
+    top: 50%; /* Centre l'icône verticalement */
+    transform: translateY(-50%);
+    color: #777; /* Couleur de l'icône */
+}
+.input-container.password::after {
+    content: '\f06e'; /* Code Unicode pour l'icône de l'œil ouvert dans Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    right: 10px; 
+    top: 50%; /* Centre le deuxième icône verticalement */
+    transform: translateY(-50%);
+    color: #777; /* Couleur du deuxième icône */
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xjyKf9mW1bKXuVl/t0FGYz6zVnq4D8qoMq75R3F2DRfiYr5Vz1qgQXWz4h6W3lWWMQJGp8qyTGr6JZwSfZPw1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="C:/Users/may/Desktop/projet DB/ListeEmployesStyle.css">
+  <script src="C:/Users/may/Desktop/projet DB/fonctions.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="section1">
+          <div class="container1">
+            <div class="filter-section">
+              Filtrer
+            </div>
+            <ul class="filter-list">
+              <li onclick="toggleFilter('nom')">Nom <i class="fas fa-chevron-down"></i></li>
+              <div class="filter-details" id="nom-details">
+                <div class="search-container1">
+                  <input type="text" id="nom-input" onkeydown="if (event.keyCode === 13) filterTable1()">
+                </div>
+              </div>
+              <li onclick="toggleFilter('prenom')">Prénom<i class="fas fa-chevron-down"></i></li>
+              <div class="filter-details" id="prenom-details">
+                <div class="search-container1">
+                  <input type="text" id="prenom-input" onkeydown="if (event.keyCode === 13) filterTable1()">
+                </div>
+              </div>
+          
+              <li onclick="toggleFilter('anciennete')">Ancienneté <i class="fas fa-chevron-down"></i></li>
+              <div class="filter-details" id="anciennete-details">
+                <div class="search-container1">
+                  <input type="text" id="anciennete-input" onkeydown="if (event.keyCode === 13) filterTable1()">
+                </div>
+              </div>
+              <li onclick="toggleFilter('ville')">Ville <i class="fas fa-chevron-down"></i></li>
+              <div class="filter-details" id="ville-details">
+                <div class="search-container2">
+                <input type="text" id="ville-input" onkeydown="if (event.keyCode === 13) filterTable1()">
+                </div>
+              </div>
+              
+                       </ul>
+                       <br>
+              <!-- <button onclick="filterTable1()">OK</button> -->
+
+          </div>
+
+    </div>
+    <div class="section2">
+      <div class="container2">
+          <div class="search-container">  
+            <input type="text" id="searchInput" placeholder="Rechercher..." onkeydown="handleKeyDown(event)">                  <button id="statsButton" style="background-color: orange;"  onclick="redirigerVersPage()">Statistiques</button>
+          </div>
+          
+          <table id="dataTable">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Anciennté</th>
+                <th>Adresse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Wilson</td>
+                <td>Sarah</td>
+                <td>4</td>
+                <td>
+                  <div  style="display: inline-block;">
+                  9 
+                 </div>  <div style="display: inline-block;">
+                              Tokyo
+                            </div>
+                 
+                  <div style="display: inline-block;">
+                    78901
+                  </div>
+                </td>
+              </tr>
+                <tr>
+                  <td>Doe</td>
+                  <td>John </td>
+                  <td>1</td>
+                  <td>
+                    <div style="display: inline-block;">
+                      10 
+                    </div>
+                    <div style="display: inline-block;">
+                      Tokyo
+                    </div>
+                    <div style="display: inline-block;">
+                      78902
+                    </div>
+                  </td>
+                </tr>
+              <tr>
+                <td>Taylor</td>
+                <td>Emily</td>
+                <td>6</td>
+                <td>
+                  <div style="display: inline-block;">
+                    7 
+                  </div>
+                  <div style="display: inline-block;">
+                    Berlin
+                  </div>
+                  <div style="display: inline-block;">
+                    23456
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                  <td>Johnson</td>
+                  <td>David</td>
+                  <td>5</td>
+                  <td>
+                    <div style="display: inline-block;">
+                      12
+                    </div>
+                    <div style="display: inline-block;">
+                      London 
+                    </div>
+                    <div style="display: inline-block;">
+                      45678
+                    </div>
+                  </td>
+                </tr>
+                    
+            </tbody>
+          </table>
+        </div>
+       </div>   
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
